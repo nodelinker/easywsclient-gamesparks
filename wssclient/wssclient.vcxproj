@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3C16B0F-68C6-47E9-A266-215A35C68DB8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>wssclient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\c++dev\wssclient\wssclient\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\easywsclient\easywsclient.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cjson\cJSON.cpp" />
+    <ClCompile Include="easywsclient\easywsclient.cpp" />
+    <ClCompile Include="google\strptime.cpp" />
+    <ClCompile Include="google\timesupport.cpp" />
+    <ClCompile Include="hmac\hmac_sha2.cpp" />
+    <ClCompile Include="hmac\sha2.cpp" />
+    <ClCompile Include="mbedtls\aes.c" />
+    <ClCompile Include="mbedtls\aesni.c" />
+    <ClCompile Include="mbedtls\arc4.c" />
+    <ClCompile Include="mbedtls\asn1parse.c" />
+    <ClCompile Include="mbedtls\asn1write.c" />
+    <ClCompile Include="mbedtls\base64.c" />
+    <ClCompile Include="mbedtls\bignum.c" />
+    <ClCompile Include="mbedtls\blowfish.c" />
+    <ClCompile Include="mbedtls\camellia.c" />
+    <ClCompile Include="mbedtls\ccm.c" />
+    <ClCompile Include="mbedtls\certs.c" />
+    <ClCompile Include="mbedtls\cipher.c" />
+    <ClCompile Include="mbedtls\cipher_wrap.c" />
+    <ClCompile Include="mbedtls\ctr_drbg.c" />
+    <ClCompile Include="mbedtls\debug.c" />
+    <ClCompile Include="mbedtls\des.c" />
+    <ClCompile Include="mbedtls\dhm.c" />
+    <ClCompile Include="mbedtls\ecdh.c" />
+    <ClCompile Include="mbedtls\ecdsa.c" />
+    <ClCompile Include="mbedtls\ecp.c" />
+    <ClCompile Include="mbedtls\ecp_curves.c" />
+    <ClCompile Include="mbedtls\entropy.c" />
+    <ClCompile Include="mbedtls\entropy_poll.c" />
+    <ClCompile Include="mbedtls\error.c" />
+    <ClCompile Include="mbedtls\gcm.c" />
+    <ClCompile Include="mbedtls\havege.c" />
+    <ClCompile Include="mbedtls\hmac_drbg.c" />
+    <ClCompile Include="mbedtls\md.c" />
+    <ClCompile Include="mbedtls\md2.c" />
+    <ClCompile Include="mbedtls\md4.c" />
+    <ClCompile Include="mbedtls\md5.c" />
+    <ClCompile Include="mbedtls\md_wrap.c" />
+    <ClCompile Include="mbedtls\memory_buffer_alloc.c" />
+    <ClCompile Include="mbedtls\net.c" />
+    <ClCompile Include="mbedtls\oid.c" />
+    <ClCompile Include="mbedtls\padlock.c" />
+    <ClCompile Include="mbedtls\pem.c" />
+    <ClCompile Include="mbedtls\pk.c" />
+    <ClCompile Include="mbedtls\pkcs11.c" />
+    <ClCompile Include="mbedtls\pkcs12.c" />
+    <ClCompile Include="mbedtls\pkcs5.c" />
+    <ClCompile Include="mbedtls\pkparse.c" />
+    <ClCompile Include="mbedtls\pkwrite.c" />
+    <ClCompile Include="mbedtls\pk_wrap.c" />
+    <ClCompile Include="mbedtls\platform.c" />
+    <ClCompile Include="mbedtls\ripemd160.c" />
+    <ClCompile Include="mbedtls\rsa.c" />
+    <ClCompile Include="mbedtls\sha1.c" />
+    <ClCompile Include="mbedtls\sha256.c" />
+    <ClCompile Include="mbedtls\sha512.c" />
+    <ClCompile Include="mbedtls\ssl_cache.c" />
+    <ClCompile Include="mbedtls\ssl_ciphersuites.c" />
+    <ClCompile Include="mbedtls\ssl_cli.c" />
+    <ClCompile Include="mbedtls\ssl_cookie.c" />
+    <ClCompile Include="mbedtls\ssl_srv.c" />
+    <ClCompile Include="mbedtls\ssl_ticket.c" />
+    <ClCompile Include="mbedtls\ssl_tls.c" />
+    <ClCompile Include="mbedtls\threading.c" />
+    <ClCompile Include="mbedtls\timing.c" />
+    <ClCompile Include="mbedtls\version.c" />
+    <ClCompile Include="mbedtls\version_features.c" />
+    <ClCompile Include="mbedtls\x509.c" />
+    <ClCompile Include="mbedtls\x509write_crt.c" />
+    <ClCompile Include="mbedtls\x509write_csr.c" />
+    <ClCompile Include="mbedtls\x509_create.c" />
+    <ClCompile Include="mbedtls\x509_crl.c" />
+    <ClCompile Include="mbedtls\x509_crt.c" />
+    <ClCompile Include="mbedtls\x509_csr.c" />
+    <ClCompile Include="mbedtls\xtea.c" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="wssclient.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\easywsclient">
+      <UniqueIdentifier>{911326b0-7d16-4e00-aad8-f4da841d1e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\mbedtls">
+      <UniqueIdentifier>{43799aa7-bf40-4841-a38f-5d54f4054bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\hmac">
+      <UniqueIdentifier>{31ffc9c6-e0b5-4110-aa5b-72dd85dfa95d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\google">
+      <UniqueIdentifier>{78b61412-8939-4cf5-91c4-2b2aeb69984f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\cjson">
+      <UniqueIdentifier>{608142db-f36b-4111-86a9-7fd753f78721}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\easywsclient\easywsclient.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wssclient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hmac\hmac_sha2.cpp">
+      <Filter>源文件\hmac</Filter>
+    </ClCompile>
+    <ClCompile Include="hmac\sha2.cpp">
+      <Filter>源文件\hmac</Filter>
+    </ClCompile>
+    <ClCompile Include="google\strptime.cpp">
+      <Filter>源文件\google</Filter>
+    </ClCompile>
+    <ClCompile Include="google\timesupport.cpp">
+      <Filter>源文件\google</Filter>
+    </ClCompile>
+    <ClCompile Include="cjson\cJSON.cpp">
+      <Filter>源文件\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="easywsclient\easywsclient.cpp">
+      <Filter>源文件\easywsclient</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\aes.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\aesni.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\arc4.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\asn1parse.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\asn1write.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\base64.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\bignum.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\blowfish.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\camellia.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ccm.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\certs.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\cipher.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\cipher_wrap.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ctr_drbg.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\debug.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\des.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\dhm.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ecdh.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ecdsa.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ecp.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ecp_curves.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\entropy.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\entropy_poll.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\error.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\gcm.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\havege.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\hmac_drbg.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\md.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\md_wrap.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\md2.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\md4.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\md5.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\memory_buffer_alloc.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\net.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\oid.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\padlock.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pem.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pk.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pk_wrap.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pkcs5.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pkcs11.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pkcs12.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pkparse.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\pkwrite.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\platform.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ripemd160.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\rsa.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\sha1.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\sha256.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\sha512.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ssl_cache.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ssl_ciphersuites.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ssl_cli.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ssl_cookie.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ssl_srv.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ssl_ticket.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\ssl_tls.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\threading.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\timing.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\version.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\version_features.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\x509.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\x509_create.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\x509_crl.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\x509_crt.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\x509_csr.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\x509write_crt.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\x509write_csr.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="mbedtls\xtea.c">
+      <Filter>源文件\mbedtls</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
